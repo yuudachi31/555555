@@ -65,7 +65,7 @@ $('.IGicon').hover(
 $(document).ready(function(){
 blackhole('#blackhole');
 
-
+var skrollr_obj = skrollr.init();
 
 function blackhole(element) {
 	var h = $(element).height(),
