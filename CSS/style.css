@@ -1,0 +1,73 @@
+body{
+    background-color:#1E1E21;
+}
+.context{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    background-color:#1E1E21;
+}
+.article{
+    width: 50%;
+    margin-left: 10%;
+    padding: 20px 50px;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #707070;
+    word-wrap: break-word;
+}
+.article h1{
+    line-height: 1.2em;
+}
+.image{
+    width: 40%;
+    margin-right: 10%;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #707070;
+}
+.image-blackhole{
+    display: block;
+    width: 40%;
+    margin-right: 10%;
+    margin-top: 10%;
+    margin-bottom: 20%;
+}
+.image p{
+    display: block;
+    width: 400px;
+    margin-top: 0;
+    padding-left: 30px;
+}
+.blackhole-img{
+    display: block;
+    margin: 10% 30px;
+    width: 500px;
+    height: 300px;
+}
+.blackhole-img2{
+    display: block;
+    margin: 10% 30px;
+    width: 500px;
+    height: 300px;
+}
+@media(max-width:900px){
+
+.context{
+    display: flex;
+    flex-direction: column;
+}
+.blackhole-img{
+    margin: 30px 100%;
+}
+.image p{
+    margin: 30px 100%;
+}
+.blackhole-img2{
+    margin: 30px 26%;
+}
+}

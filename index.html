@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <style>
+                
+                .drangon-ball-char {
+                   z-index: 2;
+                   position: absolute;
+                }
+                .scrolls {
+                   z-index: 2;
+                   position: fixed;
+                }
+                .scrollsa{
+                  z-index: 2;
+                  position: absolute;
+                }
+       
+                 #bg-block {
+                   position: fixed;
+                   top: 0;
+                   left: 0;
+                   z-index: 0;
+                   min-width: 100%;
+                   min-height: 100%;
+                   background: url('images/b01.jpg') no-repeat center center fixed;
+                   -webkit-background-size: cover;
+                   -webkit-filter: blur(5px);
+                }
+             </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="CSS/normalize.css" >
+    <link rel="stylesheet" href="CSS/stylesheet.css">
+   
+	<script src="JS/jquery.js"></script>
+    <script type="text/javascript" src="JS/script.js"></script>
+         
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/skrollr.min.js"></script>
+</head>
+<body>
+    <div id="blackhole"></div>
+        <div class="centerHover" name="centerHover"><span>ENTER</span></div>
+    </div>
+    <div class="mouse " style="left: calc(50% - 25px); opacity: 1;top: 500px;">
+       <img src="images/mouse.png" class=" skrollable skrollable-between" style="margin: auto; opacity: 1; width: 50px;top:600px;" data-0="opacity: 1;-webkit-filter: blur(0px);" data-200="opacity: 1;-webkit-filter: blur(0px);"data-300="opacity: 0.5;-webkit-filter: blur(5px);"data-400="opacity: 0;-webkit-filter: blur(10px);" >
+    </div>
+    
+   <!--
+    <div class="test1">TEST1</div>
+   <div class="test4">TEST4</div>
+  --> 
+        
+  <!--<div class="drangon-ball-char" style="top:150px;width:100%;text-align:center">
+           <img src="images/dragonballz.png" style="width: 500px; opacity: 1; -webkit-filter: blur(0px);" data-0="opacity: 1;-webkit-filter: blur(0px);" data-100="opacity: 0.5;-webkit-filter: blur(5px);" class="skrollable skrollable-between">
+        </div>
+        
+        <div class="scrolls skrollable " style=" opacity: 1; right: 0px; -webkit-filter: blur(0px);" data-0="opacity: 0;-webkit-transform:scale(1);right: 10%;top:50%;  -webkit-filter: blur(5px);" data-300="opacity: 1; -webkit-transform:scale(2);  right: 40%;-webkit-filter: blur(0px);" data-600="opacity: 1;-webkit-transform:scale(2);  right: 60%;-webkit-filter: blur(0px);" data-900="opacity: 0;-webkit-transform:scale(1);  right:80%;-webkit-filter: blur(5px);">
+           <div style=" border: aliceblue 3px solid ; font-size: 70px;  color:aliceblue;">
+         </div>
+        </div>
+        <div class="scrolls skrollable " style=" opacity: 1; right: 0px; -webkit-filter: blur(0px);" data-0="opacity: 0;-webkit-transform:scale(1);right: 10%;top:50%;  -webkit-filter: blur(5px);" data-300="opacity: 1; -webkit-transform:scale(2);  right: 40%;-webkit-filter: blur(0px);" data-600="opacity: 1;-webkit-transform:scale(2);  right: 60%;-webkit-filter: blur(0px);" data-900="opacity: 0;-webkit-transform:scale(1);  right:80%;-webkit-filter: blur(5px);">
+         <div style=" border: aliceblue 3px solid ; font-size: 70px;  color:aliceblue;">
+       </div>
+      </div>
+      <div class="scrolls skrollable " style=" opacity: 1; right: 0px; -webkit-filter: blur(0px);" data-0="opacity: 0;-webkit-transform:scale(1);right: 10%;top:50%;  -webkit-filter: blur(5px);" data-300="opacity: 1; -webkit-transform:scale(2);  right: 40%;-webkit-filter: blur(0px);" data-600="opacity: 1;-webkit-transform:scale(2);  right: 60%;-webkit-filter: blur(0px);" data-900="opacity: 0;-webkit-transform:scale(1);  right:80%;-webkit-filter: blur(5px);">
+         <div style=" border: aliceblue 3px solid ; font-size: 70px;  color:aliceblue;">
+       </div>
+      </div>
+      <div class="scrolls skrollable " style=" opacity: 1; right: 0px; -webkit-filter: blur(0px);" data-0="opacity: 0;-webkit-transform:scale(1);right: 10%;top:50%;  -webkit-filter: blur(5px);" data-300="opacity: 1; -webkit-transform:scale(2);  right: 40%;-webkit-filter: blur(0px);" data-600="opacity: 1;-webkit-transform:scale(2);  right: 60%;-webkit-filter: blur(0px);" data-900="opacity: 0;-webkit-transform:scale(1);  right:80%;-webkit-filter: blur(5px);">
+         <div style=" border: aliceblue 3px solid ; font-size: 70px;  color:aliceblue;">
+       </div>
+      </div>--> 
+      <div class="scrolls skrollable " style=" opacity: 1; right: -300px; -webkit-filter: blur(0px);" data-800="opacity: 0;-webkit-transform:scale(1);right: 30%;top:50%;  -webkit-filter: blur(5px);" data-1100="opacity: 1; -webkit-transform:scale(2.5);  right: 30%;-webkit-filter: blur(0px);" data-2000="opacity: 1;-webkit-transform:scale(2.5);  right: 30%;-webkit-filter: blur(0px);" data-2150="opacity: 0;-webkit-transform:scale(1);  right:80%;-webkit-filter: blur(5px);">
+         <div class="blht">BLACKHOLE
+       </div>
+      </div>
+      <div class="scrolls skrollable " style=" opacity: 1; right: -300px; -webkit-filter: blur(0px);" data-2800="opacity: 0;-webkit-transform:scale(1);left: -30%;top:30%;  -webkit-filter: blur(5px);" data-3100="opacity: 1; -webkit-transform:scale(1);  left: 30%;-webkit-filter: blur(0px);" data-5700="opacity: 1;-webkit-transform:scale(1);  left:30%;-webkit-filter: blur(0px);" data-6150="opacity: 0;-webkit-transform:scale(1); left:30%;-webkit-filter: blur(5px);">
+         <div class="Biggest">
+           Biggest
+       </div>
+      </div>
+       <div class="scrolls skrollable " style=" opacity: 1; right: -300px; -webkit-filter: blur(0px);" data-3500="opacity: 0;-webkit-transform:scale(1);left: 50%;top:40%;  -webkit-filter: blur(5px);" data-3800="opacity: 1; -webkit-transform:scale(1);  left: 50%;-webkit-filter: blur(0px);" data-5700="opacity: 1;-webkit-transform:scale(1); -webkit-filter: blur(0px);" data-6150="opacity: 0;-webkit-transform:scale(1);  -webkit-filter: blur(5px);">
+            <div class="Mystery">
+              Mystery
+          </div>
+         </div>
+         <div class="scrolls skrollable " style=" opacity: 1; right: -300px; -webkit-filter: blur(0px);" data-4000="opacity: 0;-webkit-transform:scale(1);left: 30%;top:55%;  -webkit-filter: blur(5px);" data-4001="opacity: 1; -webkit-transform:scale(1);  left: 30%;-webkit-filter: blur(0px);" data-5700="opacity: 1;-webkit-transform:scale(1);  left: 30%;-webkit-filter: blur(0px);" data-6150="opacity: 0;-webkit-transform:scale(1);  left:30%;-webkit-filter: blur(5px);">
+            <div class="In">
+              In
+          </div>
+         </div>
+         <div class="scrolls skrollable " style=" opacity: 1; right: -300px; -webkit-filter: blur(0px);" data-4400="opacity: 0;-webkit-transform:scale(1);left: 40%;top:55%;  -webkit-filter: blur(5px);" data-4401="opacity: 1; -webkit-transform:scale(1);  left: 40%;-webkit-filter: blur(0px);" data-5700="opacity: 1;-webkit-transform:scale(1);  left: 40%;-webkit-filter: blur(0px);" data-6150="opacity: 0;-webkit-transform:scale(1);  left:40%;-webkit-filter: blur(5px);">
+            <div class="The">
+              The
+          </div>
+         </div>
+         <div class="scrolls skrollable " style=" opacity: 1; right: -300px; -webkit-filter: blur(0px);" data-4800="opacity: 0;-webkit-transform:scale(1);left: 52%;top:53%;  -webkit-filter: blur(5px);" data-4801="opacity: 1; -webkit-transform:scale(1);  left: 52%;-webkit-filter: blur(0px);" data-5700="opacity: 1;-webkit-transform:scale(1);  left: 52%;-webkit-filter: blur(0px);" data-6150="opacity: 0;-webkit-transform:scale(1);  left:52%;-webkit-filter: blur(5px);">
+            <div class="World">
+              World
+          </div>
+         </div>
+         <div class="scrolls skrollable " style=" opacity: 0;  -webkit-filter: blur(0px);"data-6500="opacity: 0" data-6550="opacity: 1;-webkit-transform:scale(1);bottom:5%;  right:20%;"data-6700="opacity: 1;-webkit-transform:scale(1);bottom:5%;  ;">
+            <div class="continue">
+              continue
+          </div>
+         </div>
+         <div class="page2">
+            <div class="body2">
+               <div class="a23sq">
+                  <div class="scrollsa skrollable " style=" opacity: 1; top:-100px; -webkit-filter: blur(0px);" data-0=" z-index:-1; top:-40%; " data-80="opacity: 1;z-index:-1; top-40% -webkit-transform:scale(1);  -webkit-filter: blur(0px);" data-160="z-index:-1;top:-30%;-webkit-transform:scale(1); -webkit-filter: blur(4px);" data-240="top:-20%;-webkit-transform:scale(1);-webkit-filter: blur(7px);"data-300="top:-10%;-webkit-transform:scale(1); opacity: 1;"data-600="top:0%;opacity:1;">
+                       <div >
+                        <img class="a23img" src="images/a23.jpg"  >
+                     </div>
+                     </div>
+                     </div>
+                     <div class="blackh2">B L A C K </div> <div class="blackh2">H O L E</div>
+           <!-- <div class="a23"><img src="images/a23.jpg" class="a23img"></div>
+           -->
+           <div class="body3">
+              <div class="headr"></div>
+              <section1 class="sct1">
+                 <div class="abusq">
+                    <h1 class="abu">About Us</h1>
+                    <div class="abua">Black holes have always fascinated many
+                        people, and we introduce black holes and provide
+                        information about black holes on this site.</div>
+                  </div>
+            <div class="ppp"><iframe src="https://giphy.com/embed/OANp03XvXEV9u"  width="400" height="400" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> </div>
+            
+         
+         </section1>
+         <section2>
+               <div class="ssqq1"> 
+         <div class="wsba">What's a black hole?</div>
+         <!--
+         <div class="scrollsa skrollable " style="width: 400px; opacity: 1;  -webkit-filter: blur(0px);" data-900="opacity: 0;left: 0px;top:1500px;  -webkit-filter: blur(5px);" data-950="opacity: 1;  left: 15%;-webkit-filter: blur(0px);" data-1480="opacity: 1;  -webkit-filter: blur(0px);" >
+            <div class="cld1">
+              <img src="images/cloud03.png">
+          </div>
+          </div>
+          <div class="scrollsa skrollable " style="width: 200px; opacity: 1;  -webkit-filter: blur(0px);" data-950="right:0px; opacity: 0;right: 10%;top:1520px;  -webkit-filter: blur(5px);" data-1000="right:35%; opacity: 1;  -webkit-filter: blur(0px);" data-1580="opacity: 1;  -webkit-filter: blur(0px);" >
+            <div class="cld2">
+              <img src="images/cloud01.png">
+          </div>
+          </div>
+         -->
+         
+         <a href="context1.htm"target="_blank"><div class="contr">
+            
+            <div class="spr2">
+<div class="bkh"></div>
+            <div class="spr">
+                
+                <div class="sq1 sq"></div>
+                <div class="sq2 sq"></div>
+                <div class="sq3 sq"></div>
+                <div class="sq4 sq"></div>
+                <div class="sq5 sq"></div>
+                <div class="sq6 sq"></div>
+                <div class="sq7 sq"></div>
+                <div class="sq8 sq"></div>
+                <div class="sq9 sq"></div>
+                <div class="sq10 sq"></div>
+                <div class="sq11 sq"></div>
+                <div class="sq12 sq"></div>
+                <div class="sq13 sq"></div>
+                <div class="sq14 sq"></div>
+                <div class="sq15 sq"></div>
+                <div class="sq16 sq"></div>
+                <div class="sq17 sq"></div>
+                <div class="sq18 sq"></div>
+                <div class="sq19 sq"></div>
+                <div class="sq20 sq"></div>
+                <div class="sq21 sq"></div>
+                <div class="sq22 sq"></div>
+                <div class="sq23 sq"></div>
+                <div class="sq24 sq"></div>
+                <div class="sq25 sq"></div>
+                <div class="sq26 sq"></div>
+                <div class="sq27 sq"></div>
+                <div class="sq28 sq"></div>
+                <div class="sq29 sq"></div>
+                <div class="sq30 sq"></div>
+                <div class="sq31 sq"></div>
+                </div>
+            </div>    
+        </div>
+      </a> 
+          </div>
+          
+          </div>
+          
+          </section2>
+          <section3>
+               <div class="ssqq">
+               <div class="wsba">Types of black hole</div>
+               
+               <a href="context2.htm"target="_blank"><img src="images/bling.png"class="bling"></a>
+               
+               <iframe  src="https://giphy.com/embed/jEJYhqfTV2euA" width="400" height="396vw" class="dogs " frameBorder="0"  allowFullScreen></iframe>
+               </div>
+               
+          </section3>
+         <section4>
+               <div class="ssqq">
+               <div class="wsba2">How to find black holes?</div>
+               <div class="star"><img src="images/stars.jpg">
+                  </div>
+               
+
+
+         </section4>
+         </div>
+         <div class="scrollsa skrollable cam " style=" opacity: 0;  -webkit-filter: blur(0px);"data-2030="opacity: 0; top:2500px" data-2270="opacity: 1;-webkit-transform:scale(1);  ">
+         <a href="context3.htm"target="_blank"><img src="images/cam.png"></a>
+         </div>
+         
+         
+      </div>
+      
+   </div>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!--   
+        <div class="drangon-ball-char skrollable skrollable-before" style="top: 1500px; opacity: 1; right: -500px; -webkit-filter: blur(0px);" data-1200="opacity: 1;right: -500px;-webkit-filter: blur(0px);" data-1500="opacity: 1;right: 300px;-webkit-filter: blur(0px);" data-1800="opacity: 0;right: 400px;-webkit-filter: blur(5px);">
+           <img src="images/buwu.png" style="width:400px;">
+        </div>
+        <div class="drangon-ball-char skrollable skrollable-before" style="top: 1800px; opacity: 1; left: -500px; -webkit-filter: blur(0px);" data-1500="opacity: 1;left: -500px;-webkit-filter: blur(0px);" data-1800="opacity: 1;left: 300px;-webkit-filter: blur(0px);" data-2100="opacity: 0;left: 400px;-webkit-filter: blur(5px);">
+           <img src="images/dall3.png" style="width:400px;">
+        </div>
+        <div class="drangon-ball-char skrollable skrollable-before" style="top: 2100px; opacity: 1; right: -500px; -webkit-filter: blur(0px);" data-1800="opacity: 1;right: -500px;-webkit-filter: blur(0px);" data-2100="opacity: 1;right: 300px;-webkit-filter: blur(0px);" data-2400="opacity: 0;right: 400px;-webkit-filter: blur(5px);">
+           <img src="images/baba.png" style="width:400px;">
+        </div>
+        <div class="drangon-ball-char skrollable skrollable-before" style="top: 2400px; opacity: 1; left: -500px; -webkit-filter: blur(0px);" data-2100="opacity: 1;left: -500px;-webkit-filter: blur(0px);" data-2400="opacity: 1;left: 300px;-webkit-filter: blur(0px);" data-2500="opacity: 0;left: 400px;-webkit-filter: blur(5px);">
+           <img src="images/cell.png" style="width:400px;">
+        </div>
+        <div class="drangon-ball-char" style="top:2900px;width:100%;text-align:center">
+           <img src="images/dbz.png" style="width: 500px; opacity: 0; -webkit-filter: blur(5px);" data-2600="opacity: 0;-webkit-filter: blur(5px);" data-2800="opacity: 1;-webkit-filter: blur(0px);" class="skrollable skrollable-before">
+        </div>
+        <div class="drangon-ball-char" style="top:3000px;width:100%;text-align:center">
+           <img src="" style="width: 900px; opacity: 0; -webkit-filter: blur(5px);" data-2700="opacity: 0;-webkit-filter: blur(5px);" data-2900="opacity: 1;-webkit-filter: blur(0px);" class="skrollable skrollable-before">
+        </div>
+-->         
+    <script type="text/javascript">
+        var skrollr_obj = skrollr.init();
+        </script>
+        <script src="JS/TweenMax.min.js" charset="UTF-8"></script>
+        <footer>
+         
+         </footer>
+</body>
+
+</html>
